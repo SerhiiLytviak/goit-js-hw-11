@@ -23,7 +23,7 @@ refs.loadMoreBtn.classList.add('is-hidden');
 
 function onSubmitClick(e) {
   e.preventDefault();
-
+  refs.loadMoreBtn.classList.add('is-hidden');
   const form = e.currentTarget;
   pixabayFetch.query = form.elements.searchQuery.value;
   refs.gallery.innerHTML = '';
